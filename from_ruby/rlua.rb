@@ -3,8 +3,6 @@
 require 'rlua'
 
 state = Lua::State.new
-
-# We probably woudln't use anything from stdlib
 # state.__load_stdlib :all
 
 state.input = 10                     # set a value
