@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+cd "$(dirname "$0")/.."
+
+type lua-5.1 >& /dev/null || brew install lua@5.1
+
+cd from_ruby
+bundle install
